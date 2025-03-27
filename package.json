@@ -20,6 +20,7 @@
     "@tweakpane/core": "^2.0.5",
     "@tweakpane/plugin-essentials": "^0.2.1",
     "@types/three": "^0.174.0",
+    "conventional-changelog-cli": "^5.0.0",
     "eslint": "^9.17.0",
     "pathe": "^2.0.3",
     "tweakpane": "^4.0.5",
