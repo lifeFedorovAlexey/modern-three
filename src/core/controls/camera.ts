@@ -1,5 +1,5 @@
 import { PerspectiveCamera } from 'three'
-import { scene, sizes } from './renderer'
+import { scene, sizes } from '../renderer'
 
 const VERTICAL_FIELD_OF_VIEW = 45 // degrees 45 is the normal
 
@@ -18,5 +18,3 @@ window.addEventListener('resize', () => {
 })
 
 scene.add(camera)
-
-export default camera

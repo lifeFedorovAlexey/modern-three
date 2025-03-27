@@ -6,7 +6,7 @@ import {
   Scene,
   WebGLRenderer,
 } from 'three'
-import { gui } from './gui'
+import { gui } from './controls/gui'
 
 export const sizes = {
   width: window.innerWidth,
@@ -17,7 +17,9 @@ export const sizes = {
 export const scene = new Scene()
 scene.background = new Color('#333')
 
-const canvas: HTMLCanvasElement = document.querySelector('#webgl') as HTMLCanvasElement
+const canvas: HTMLCanvasElement = document.querySelector(
+  '#webgl',
+) as HTMLCanvasElement
 
 // Renderer
 export const renderer = new WebGLRenderer({
@@ -35,6 +37,7 @@ renderer.toneMappingExposure = 1
 
 // Axes Helper
 const axesHelper = new AxesHelper()
+axesHelper.visible = false
 scene.add(axesHelper)
 
 gui.addBinding(axesHelper, 'visible', {
